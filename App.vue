@@ -1,22 +1,18 @@
-<!-- App.vue -->
-<template>
-  <view class="app">
-    <!-- uni-app 的页面由 pages.json 管理，无需在 App.vue 中写路由视图 -->
-  </view>
-</template>
+<script setup>
+import {onLaunch, onShow, onHide} from '@dcloudio/uni-app'
+onLaunch(() => {
+  console.log('App Launch')
+})
 
-<script script>
-const onLaunch = function() {
-	console.log('App Launch')
-}
-const onShow = function() {
-	console.log('App Show')
-}
-const onHide = function() {
-	console.log('App Hide')
-}
+onShow(() => {
+  console.log('App Show')
+})
+
+onHide(() => {
+  console.log('App Hide')
+})
 </script>
 
 <style>
-	/*每个页面公共css */
+/*每个页面公共css */
 </style>

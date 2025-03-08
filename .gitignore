@@ -79,3 +79,5 @@ tasks_in_progress
 
 # uni-app
 /unpackage/
+
+/node_modules/
